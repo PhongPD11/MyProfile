@@ -2,10 +2,9 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "/src/index.js",
   "scripts": {
-    "start": "nodemon --inspect src/index.js",
-    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
+    "start": "nodemon --inspect ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,9 +14,9 @@
   "keywords": [
     "blog",
     "profile",
-    "Kai"
+    "kai"
   ],
-  "author": "Kai",
+  "author": "kai",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PhongPD11/MyProfile/issues"
@@ -28,7 +27,6 @@
     "express-handlebars": "^6.0.6"
   },
   "devDependencies": {
-    "bootstrap": "^5.2.2",
     "morgan": "^1.10.0",
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"

@@ -1,13 +1,11 @@
-const newsRouter = require('./news');
-const siteRouter = require('./site');
+const express = require('express')
+const app = express()
+const port = 3000
 
-function route(app) {
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
 
-    app.use('/news', newsRouter);
-
-    app.use('/', siteRouter);
-
-
-}
-
-module.exports = route;
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
